@@ -5,7 +5,6 @@ import studentList from "./studentAction";
 import singleStudent from "./studentAction";
 import updatedData from "./studentAction";
 import deleteStudent from "./studentAction";
-import {showSnackbar, snackBarData} from "./snackBar";
 
 export default combineReducers({
   form: reduxFormReducer,
@@ -13,8 +12,6 @@ export default combineReducers({
   studentList,
   singleStudent,
   updatedData,
-  deleteStudent,
-  showSnackbar,
-  snackBarData
+  deleteStudent
 });
 

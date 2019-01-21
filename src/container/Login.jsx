@@ -13,7 +13,6 @@ import {TextField, Checkbox} from "redux-form-material-ui";
 import {MuiThemeProvider, getMuiTheme} from "material-ui/styles";
 import {Link} from "react-router-dom";
 import {postLoginData} from "../reducers/authentication/actions";
-import {changeSnackData} from "../reducers/snackBar/action";
 
 const styles = theme => ({
   main: {
@@ -67,7 +66,6 @@ class Login extends React.Component {
   handleSubmit= values => {
     console.log(values);
     this.props.dispatch(postLoginData(values, this.successLogin));
-    changeSnackData({message: "Click on Apply to Save Changes", variant: "success"});
   }
 
   render () {
